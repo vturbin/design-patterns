@@ -5,23 +5,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-const defaultGun = (gun) => {
-    console.log('-- decorator function invoked --');
-    return class extends Gun {
-        constructor() {
-            super(...arguments);
-            this.ammo = 10;
-        }
-    };
+const myDecorator = (parent, prop, descriptor) => {
+    console.log(parent, typeof parent);
+    console.log(prop, typeof prop);
+    console.log(descriptor, typeof descriptor);
 };
-let Gun = class Gun {
+const AmmoDescription = (args) => (parent, prop) => {
+    console.log(parent, prop, args);
+};
+class Gun {
     constructor() {
-        console.log('-- this constructor invoked --');
+        this.ammo = 10;
     }
-};
-Gun = __decorate([
-    defaultGun
-], Gun);
-console.log('-- creating an instance --');
-const gun = new Gun();
-console.log(gun); // => 10
+    fire() {
+        console.log('Firing in 3... 2... 1... 🔫');
+    }
+}
+__decorate([
+    myDecorator
+], Gun.prototype, "fire", null);
+__decorate([
+    AmmoDescription('9/3')
+], Gun.prototype, "ammo", void 0);

@@ -1,32 +1,19 @@
 "use strict";
-class Car {
+class Tesla {
+    constructor() {
+        this.description = 'Model S';
+    }
     getDescription() {
         return this.description;
-    }
-}
-class CarOptions extends Car {
-}
-// ------------------------------ Cars ------------------------------
-class ModelS extends Car {
-    constructor() {
-        super(...arguments);
-        this.description = 'Model S';
     }
     cost() {
         return 73000;
     }
 }
-class ModelX extends Car {
-    constructor() {
-        super(...arguments);
-        this.description = 'Model X';
-    }
-    cost() {
-        return 77000;
-    }
+class TeslaOptionsDecorator extends Tesla {
 }
 // ------------------------------ Options ------------------------------
-class EnhancedAutoPilot extends CarOptions {
+class EnhancedAutoPilot extends TeslaOptionsDecorator {
     constructor(car) {
         super();
         this.decoratedCar = car;
@@ -38,7 +25,7 @@ class EnhancedAutoPilot extends CarOptions {
         return this.decoratedCar.cost() + 5000;
     }
 }
-class SmartAirSuspension extends CarOptions {
+class SmartAirSuspension extends TeslaOptionsDecorator {
     constructor(car) {
         super();
         this.decoratedCar = car;
@@ -50,7 +37,7 @@ class SmartAirSuspension extends CarOptions {
         return this.decoratedCar.cost() + 2500;
     }
 }
-class RearFacingSeats extends CarOptions {
+class RearFacingSeats extends TeslaOptionsDecorator {
     constructor(car) {
         super();
         this.decoratedCar = car;
@@ -63,7 +50,7 @@ class RearFacingSeats extends CarOptions {
     }
 }
 // ------------------------------ Configure our Tesla! ------------------------------
-let myTesla = new ModelS();
+let myTesla = new Tesla();
 console.log(myTesla.getDescription(), myTesla.cost());
 myTesla = new SmartAirSuspension(myTesla);
 console.log(myTesla.getDescription(), myTesla.cost());
