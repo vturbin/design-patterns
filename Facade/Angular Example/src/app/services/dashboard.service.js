@@ -6,17 +6,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppComponent = void 0;
+exports.DashboardService = void 0;
 const core_1 = require("@angular/core");
-let AppComponent = class AppComponent {
-    constructor() {
+let DashboardService = class DashboardService {
+    getDashboardContent() {
+        throw new Error('Method not implemented.');
     }
 };
-AppComponent = __decorate([
-    (0, core_1.Component)({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.scss']
-    })
-], AppComponent);
-exports.AppComponent = AppComponent;
+DashboardService = __decorate([
+    (0, core_1.Injectable)()
+], DashboardService);
+exports.DashboardService = DashboardService;

@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppComponent = void 0;
+exports.AccountService = void 0;
 const core_1 = require("@angular/core");
-let AppComponent = class AppComponent {
-    constructor() {
+let AccountService = class AccountService {
+    getAddress() {
+        return '';
+    }
+    getOrderList() {
+        return [];
     }
 };
-AppComponent = __decorate([
-    (0, core_1.Component)({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.scss']
-    })
-], AppComponent);
-exports.AppComponent = AppComponent;
+AccountService = __decorate([
+    (0, core_1.Injectable)()
+], AccountService);
+exports.AccountService = AccountService;
