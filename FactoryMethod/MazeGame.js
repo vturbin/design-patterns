@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MazeGame = void 0;
 class MazeGame {
     // Note that, despite its name, the creator's primary
     // responsibility isn't creating (calling new objects). It usually
@@ -12,6 +14,7 @@ class MazeGame {
         console.log(`Playing inside ${this.room.getRoomName()}`);
     }
 }
+exports.MazeGame = MazeGame;
 /**
  * Factory Method pattern uses inheritance and relies on a subclass to handle the desired object instantiation.
  */

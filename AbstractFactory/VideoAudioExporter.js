@@ -1,6 +1,9 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.VideoExporter = void 0;
 class VideoExporter {
 }
+exports.VideoExporter = VideoExporter;
 class LosslessVideoExporter extends VideoExporter {
     prepareExport(videoData) {
         console.log('preparing video data for lossless export');

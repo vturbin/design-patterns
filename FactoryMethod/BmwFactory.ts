@@ -1,4 +1,4 @@
-class Bmw {
+export class Bmw {
 
 	constructor(private model:string, private price:number, private maxSpeed:number) {
 	}

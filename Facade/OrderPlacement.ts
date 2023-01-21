@@ -1,4 +1,4 @@
-class CustomerService {
+export class CustomerService {
     public orderItem(item: any, payment: number): string {
         const paymentProcessor = new PaymentProcessing();
         paymentProcessor.sendPayment(payment)

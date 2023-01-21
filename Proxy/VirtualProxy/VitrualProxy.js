@@ -4,6 +4,8 @@
 //     constructor(private filenamePath: string){
 //         console.log(`Loading image from {filename}`)
 //     }
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Bitmap = void 0;
 //     public show(): void {
 //         console.log(`Showing image ${this.filenamePath}`)
 //     }
@@ -23,6 +25,7 @@ class Bitmap {
         console.log(`Showing image ${this.filenamePath}`);
     }
 }
+exports.Bitmap = Bitmap;
 class LazyBitmap {
     constructor(filenamePath) {
         this.filenamePath = filenamePath;

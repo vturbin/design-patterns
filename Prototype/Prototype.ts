@@ -1,4 +1,4 @@
-interface IProtoType {
+export interface IProtoType {
     // interface with clone method
     clone(): this
     // The clone is deep or shallow.

@@ -1,5 +1,5 @@
 
-const myDecorator = (parent: Object, prop: string, descriptor: PropertyDescriptor) => {
+export const myDecorator = (parent: Object, prop: string, descriptor: PropertyDescriptor) => {
     console.log(parent, typeof parent)
     console.log(prop, typeof prop)
     console.log(descriptor, typeof descriptor)

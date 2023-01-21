@@ -1,5 +1,6 @@
 "use strict";
 // =============== Adapter Pattern ===============
+Object.defineProperty(exports, "__esModule", { value: true });
 class IPhoneXs {
     useLightning() {
         console.log("Using lightning port..");

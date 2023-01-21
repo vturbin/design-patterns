@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AnyCar = void 0;
 class AnyCar {
     constructor(driver) {
         this.driver = driver;
@@ -7,6 +9,7 @@ class AnyCar {
         console.log(`Car is being driven by ${this.driver.name}`);
     }
 }
+exports.AnyCar = AnyCar;
 class CarProxy {
     constructor(driver) {
         this.driver = driver;

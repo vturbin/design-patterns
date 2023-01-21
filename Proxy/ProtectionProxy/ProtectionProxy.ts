@@ -1,4 +1,4 @@
-class AnyCar {
+export class AnyCar {
     constructor(public driver: Driver){}
 
     public drive():void {

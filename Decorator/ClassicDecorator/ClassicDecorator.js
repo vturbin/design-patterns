@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Tesla = void 0;
 class Tesla {
     constructor() {
         this.description = 'Model S';
@@ -10,6 +12,7 @@ class Tesla {
         return 73000;
     }
 }
+exports.Tesla = Tesla;
 class TeslaOptionsDecorator extends Tesla {
 }
 // ------------------------------ Options ------------------------------

@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Address = void 0;
 class Address {
     constructor(zip, street) {
         this.zip = zip;
@@ -7,6 +9,7 @@ class Address {
         this.street = street;
     }
 }
+exports.Address = Address;
 class User {
     constructor(name) {
         this.name = name;

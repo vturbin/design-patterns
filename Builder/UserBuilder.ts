@@ -1,4 +1,4 @@
-class Address {
+export class Address {
     constructor(private zip: string, private street: string) {
       this.zip = zip
       this.street = street

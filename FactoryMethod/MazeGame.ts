@@ -1,4 +1,4 @@
-abstract class MazeGame {
+export abstract class MazeGame {
 
     private room!: Room;
     

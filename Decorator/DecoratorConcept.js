@@ -11,6 +11,7 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _Decorator_object;
+Object.defineProperty(exports, "__esModule", { value: true });
 class Component {
     method() {
         return 'Component Method';

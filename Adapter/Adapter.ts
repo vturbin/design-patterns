@@ -1,7 +1,7 @@
 
 // =============== Adapter Pattern ===============
 
-interface IPhone {
+export interface IPhone {
   useLightning():void;
 }
 

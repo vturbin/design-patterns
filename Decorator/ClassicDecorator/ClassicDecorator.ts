@@ -1,4 +1,4 @@
-class Tesla {
+export class Tesla {
   public description = 'Model S';
 
   public getDescription(): string {

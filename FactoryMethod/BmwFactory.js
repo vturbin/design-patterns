@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Bmw = void 0;
 class Bmw {
     constructor(model, price, maxSpeed) {
         this.model = model;
@@ -6,6 +8,7 @@ class Bmw {
         this.maxSpeed = maxSpeed;
     }
 }
+exports.Bmw = Bmw;
 class BmwFactory {
     create(type) {
         if (type === 'X5')

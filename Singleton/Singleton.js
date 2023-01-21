@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.FancyCounter = void 0;
 class FancyCounter {
     constructor() {
         this.count = 0;
@@ -15,6 +17,7 @@ class FancyCounter {
         return this.count++;
     }
 }
+exports.FancyCounter = FancyCounter;
 const counter = new FancyCounter();
 const counter2 = new FancyCounter();
 console.log('Are Instances the same object?', counter === counter2);

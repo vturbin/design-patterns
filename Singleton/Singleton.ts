@@ -1,5 +1,5 @@
 
-class FancyCounter {
+export class FancyCounter {
 
     private count: number = 0;
     private static instance: FancyCounter

@@ -17,7 +17,7 @@
 // showImage(bitmap)
 
 /** After */
-class Bitmap {
+export class Bitmap {
     constructor(private filenamePath: string){
         console.log(`Loading image from ${this.filenamePath}`);
     }

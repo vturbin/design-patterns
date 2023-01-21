@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Creator = void 0;
 /**
  * The Creator class declares the factory method that is supposed to return an
  * object of a Product class. The Creator's subclasses usually provide the
@@ -19,6 +21,7 @@ class Creator {
         return `Creator: The same creator's code has just worked with ${product.operation()}`;
     }
 }
+exports.Creator = Creator;
 /**
  * Concrete Creators override the factory method in order to change the
  * resulting product's type.

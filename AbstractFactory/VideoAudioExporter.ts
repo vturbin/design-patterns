@@ -1,4 +1,4 @@
-abstract class VideoExporter {
+export abstract class VideoExporter {
     public abstract prepareExport(videoData:unknown): void
     public abstract doExport(outputFolderPath:string): void
 }

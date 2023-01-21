@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CustomerService = void 0;
 class CustomerService {
     orderItem(item, payment) {
         const paymentProcessor = new PaymentProcessing();
@@ -12,6 +14,7 @@ class CustomerService {
         return delivery.getDeliveryStatus(itemSentForDelivery);
     }
 }
+exports.CustomerService = CustomerService;
 class Warehouse {
     constructor() {
         this.warehouseItems = [];
