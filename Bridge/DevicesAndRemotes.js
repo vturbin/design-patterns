@@ -1,30 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class RemoteControl {
-    constructor(device) {
-        this.device = device;
-    }
-    togglePower() {
-        if (this.device.isEnabled())
-            return this.device.disable();
-        this.device.enable();
-    }
-    volumeDown() {
-        this.device.setVolume(this.device.getVolume() - 10);
-    }
-    volumeUp() {
-        this.device.setVolume(this.device.getVolume() + 10);
-    }
-}
-class AdvancedRemoteControl extends RemoteControl {
-    constructor(device) {
-        super(device);
-        this.device = device;
-    }
-    mute() {
-        this.device.setVolume(0);
-    }
-}
 class TV {
     constructor() {
         this.enabled = false;
@@ -65,6 +40,22 @@ class Radio {
     }
     setVolume(percent) {
         this.volume = percent;
+    }
+}
+class RemoteControl {
+    constructor(device) {
+        this.device = device;
+    }
+    togglePower() {
+        if (this.device.isEnabled())
+            return this.device.disable();
+        this.device.enable();
+    }
+    volumeDown() {
+        this.device.setVolume(this.device.getVolume() - 10);
+    }
+    volumeUp() {
+        this.device.setVolume(this.device.getVolume() + 10);
     }
 }
 const tv = new TV();
