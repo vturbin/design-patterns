@@ -29,7 +29,7 @@ class Editor {
     }
   }
 
-// Relates to the Originator in UML diagram
+// Relates to the Caretaker in UML diagram
 export class History {
     private states: EditorState[] = [];
     
